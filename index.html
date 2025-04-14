@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator App</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Space Mono', monospace;
+    }
+  </style>
+  <script src="index.js" defer></script>
+</head>
+<body class="bg-[#c5e4e7] flex justify-center items-center min-h-screen px-4">
+
+  <div class="bg-white rounded-[10px] p-6 flex flex-col lg:flex-row gap-6 w-full max-w-screen-lg">
+
+    <div class="w-full lg:w-1/2 p-2">
+      <div>
+        <label for="bill">Bill</label>
+        <input class="block bg-[#f4fafb] hover:bg-[#c5e4e7] border border-black border-dashed h-10 w-full mt-2 rounded-[5px] pl-3 text-lg" type="number" placeholder="0.00" />
+      </div>
+
+      <div class="mt-5">
+        <label>Select Tip %</label>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-2 mb-5">
+          <button class="bg-[#00494d] hover:bg-[#26c0ab] text-white py-2 rounded-[5px] text-[18px]">5%</button>
+          <button class="bg-[#00494d] hover:bg-[#26c0ab] text-white py-2 rounded-[5px] text-[18px]">10%</button>
+          <button class="bg-[#00494d] hover:bg-[#26c0ab] text-white py-2 rounded-[5px] text-[18px]">15%</button>
+          <button class="bg-[#00494d] hover:bg-[#26c0ab] text-white py-2 rounded-[5px] text-[18px]">25%</button>
+          <button class="bg-[#00494d] hover:bg-[#26c0ab] text-white py-2 rounded-[5px] text-[18px]">50%</button>
+          <input type="number" class="block bg-[#f4fafb] hover:bg-[#c5e4e7] border border-black border-dashed h-10 w-full rounded-[5px] pl-3 text-lg" placeholder="Custom %" />
+        </div>
+      </div>
+
+      <div>
+        <label for="people">Number of People</label>
+        <input class="block bg-[#f4fafb] hover:bg-[#c5e4e7] border border-black border-dashed h-10 w-full mt-2 rounded-[5px] pl-3 text-lg" type="number" placeholder="0" />
+      </div>
+    </div>
+
+    <div class="w-full lg:w-1/2 bg-[#00494d] text-white p-6 rounded-[10px] flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center mb-4">
+          <p class="text-xl sm:text-2xl text-[#26c0ab]">Tip Amount <br><span class="text-sm text-white">/ person</span></p>
+          <span class="text-2xl sm:text-3xl">$0.00</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <p class="text-xl sm:text-2xl text-[#26c0ab]">Total <br><span class="text-sm text-white">/ person</span></p>
+          <span class="text-2xl sm:text-3xl">$0.00</span>
+        </div>
+      </div>
+
+      <button class="mt-6 bg-[#0c7d69] hover:bg-[#26c0ab] text-white w-full py-3 rounded-[7px] text-sm uppercase font-bold">Reset</button>
+    </div>
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Tip Calculator App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="tip-container">
+    <div class="border-one">
+      <div>
+        <label for="bill">Bill</label>
+        <input class="bill" type="number" placeholder="0.00">
+      </div>
+
+      <div class="tip-grid">
+        <label>Select Tip %</label>
+        <div class="grid-container">
+          <button class="tip-button">5%</button>
+          <button class="tip-button">10%</button>
+          <button class="tip-button">15%</button>
+          <button class="tip-button">25%</button>
+          <button class="tip-button">50%</button>
+          <input type="number" class="custom-tip" placeholder="Custom %">
+        </div>
+      </div>
+
+      <div>
+        <label for="people">Number of People</label>
+        <input class="people-input" type="number" placeholder="0">
+      </div>
+    </div>
+
+    <div class="border-two">
+      <div class="result">
+        <p>Tip Amount <br>  /person <span class="tip-amount">$0.00</span></p>
+        <p>Total <br> / person <span class="total-amount">$0.00</span></p>
+      </div>
+
+      <button class="reset-button">Reset</button>
+    </div>
+    
+  </div>
+</body>
+</html> -->
+

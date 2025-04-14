@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: "Space Mono", monospace;
+    background-color: #c5e4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.tip-container {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    height: 400px;
+    box-shadow: 0 5px 10px #a72a2a;
+}
+
+.border-one,
+.border-two {
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+    border: transparent;
+}
+
+.bill,
+.people-input,
+.custom-tip {
+    display: block;
+    background-color: #f4fafb;
+    border: 1px dashed black;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size:20px;
+}
+
+.tip-grid {
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.tip-button {
+    background-color: #00494d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.bill:hover {
+    background-color: #c5e4e7;
+}
+
+.custom-tip:hover {
+    background-color: #c5e4e7;
+}
+
+.people-input:hover {
+    background-color: #c5e4e7;
+}
+
+
+.tip-button:hover {
+    background-color: #26c0ab;
+}
+
+.border-two {
+    background-color: #00494d;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result p {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.tip-amount,
+.total-amount {
+    font-size: 30px;
+    font-weight: bold;
+    color: #26c0ab;
+}
+
+.reset-button {
+    width: 100%;
+    background-color: #0c7d69;
+    color: #ffffff;
+    border: 2px solid;
+    height: 35px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reset-button:hover {
+    background-color: #26c0ab;
+}
